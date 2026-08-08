@@ -2,7 +2,7 @@ package dev.mccue.parser.elm.advanced;
 
 import io.vavr.Function1;
 
-public record ParserPipeline3<Ctx, X, A, B, C, D>(
+public /*value*/ record ParserPipeline3<Ctx, X, A, B, C, D>(
         Parser<Ctx, X, Function1<A, Function1<B, Function1<C, D>>>> value
 ) implements Parser<Ctx, X, Function1<A, Function1<B, Function1<C, D>>>> {
     public ParserPipeline3<Ctx, X, A, B, C, D> __(

@@ -8,5 +8,5 @@ package dev.mccue.parser.elm.advanced;
 ///
 /// Is it needed? NOPE!, but it is fun.
 @SuppressWarnings("unused")
-public record Witness<C, X>() {
+public /*value*/ record Witness<C, X>() {
 }

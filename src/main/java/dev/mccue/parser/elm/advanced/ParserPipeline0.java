@@ -1,6 +1,6 @@
 package dev.mccue.parser.elm.advanced;
 
-public record ParserPipeline0<C, X, A>(Parser<C, X, A> value) implements Parser<C, X, A> {
+public /*value*/ record ParserPipeline0<C, X, A>(Parser<C, X, A> value) implements Parser<C, X, A> {
     public ParserPipeline0<C, X, A> __(
             Parser<C, X, ?> ignoreParser
     ) {

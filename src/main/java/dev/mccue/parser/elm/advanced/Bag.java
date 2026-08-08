@@ -3,15 +3,15 @@ package dev.mccue.parser.elm.advanced;
 import io.vavr.collection.Seq;
 
 public sealed interface Bag<Context, Problem> {
-    record Empty<Context, Problem>() implements Bag<Context, Problem> {}
+    /*value*/ record Empty<Context, Problem>() implements Bag<Context, Problem> {}
 
-    record AddRight<Context, Problem>(
+    /*value*/ record AddRight<Context, Problem>(
             Bag<Context, Problem> bag,
             DeadEnd<Context, Problem> deadEnd
     ) implements Bag<Context, Problem> {
     }
 
-    record Append<Context, Problem>(
+    /*value*/ record Append<Context, Problem>(
             Bag<Context, Problem> a,
             Bag<Context, Problem> b
     ) implements Bag<Context, Problem> {

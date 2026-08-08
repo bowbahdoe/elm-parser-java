@@ -2,7 +2,7 @@ package dev.mccue.parser.elm.advanced;
 
 import io.vavr.collection.Seq;
 
-public record State<Context>(
+public /*value*/ record State<Context>(
         String src,
         int offset,
         int indent,
